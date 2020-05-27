@@ -6,9 +6,6 @@
 import SwiftUI
 
 public struct CornerRadiusPercentageModifier: ViewModifier {
-	public let cornerRadiusPercentage: CGFloat
-	public let roundedCornerStyle: RoundedCornerStyle
-	
 	public init(cornerRadiusPercentage: CGFloat, roundedCornerStyle: RoundedCornerStyle = .circular) {
 		self.cornerRadiusPercentage = cornerRadiusPercentage
 		self.roundedCornerStyle = roundedCornerStyle
@@ -32,9 +29,12 @@ public struct CornerRadiusPercentageModifier: ViewModifier {
 			}
 		}
 	}
+	
+	private let cornerRadiusPercentage: CGFloat
+	private let roundedCornerStyle: RoundedCornerStyle
 }
 
-fileprivate extension CornerRadiusPercentageModifier {
+private extension CornerRadiusPercentageModifier {
 	func cornerRadius(from size: CGSize) -> CGFloat {
 		size.smallestDimension * cornerRadiusPercentage
 	}
