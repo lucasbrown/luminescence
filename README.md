@@ -1,3 +1,3 @@
 # Luminescence
 
-A description of this package.
+My toolkit for Swift-based development.
