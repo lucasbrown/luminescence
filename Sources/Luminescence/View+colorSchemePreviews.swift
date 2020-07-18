@@ -1,13 +1,11 @@
-//
-//  File.swift
-//  
-//
-//  Created by Lucas Brown on 7/17/20.
-//
+/**
+* Luminescence
+* Copyright © 2020 Lucas Brown
+*/
 
 import SwiftUI
 
-extension View {
+public extension View {
 	func colorSchemePreviews() -> some View {
 		Group {
 			self.preferredColorScheme(.light)
