@@ -5,7 +5,7 @@
 import SwiftUI
 
 public struct CornerRadiusPercentageModifier: ViewModifier {
-	public init(cornerRadiusPercentage: CGFloat, roundedCornerStyle: RoundedCornerStyle = .circular) {
+	public init(cornerRadiusPercentage: CGFloat, roundedCornerStyle: RoundedCornerStyle = .continuous) {
 		self.cornerRadiusPercentage = cornerRadiusPercentage
 		self.roundedCornerStyle = roundedCornerStyle
 	}
