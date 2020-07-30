@@ -10,22 +10,20 @@ public struct CornerRadiusPercentageModifier: ViewModifier {
 		self.roundedCornerStyle = roundedCornerStyle
 	}
 	
-	public func body(content: Content) -> some View {
-		Group {
-			if roundedCornerStyle == .circular {
-				content.mask(
-					GeometryReader { geometryProxy in
-						Rectangle()
-							.cornerRadius(self.cornerRadius(from: geometryProxy.size))
-					}
-				)
-			} else if roundedCornerStyle == .continuous {
-				content.mask(
-					GeometryReader { geometryProxy in
-						RoundedRectangle(cornerRadius: self.cornerRadius(from: geometryProxy.size), style: .continuous)
-					}
-				)
-			}
+	@ViewBuilder public func body(content: Content) -> some View {
+		if roundedCornerStyle == .circular {
+			content.mask(
+				GeometryReader { geometryProxy in
+					Rectangle()
+						.cornerRadius(self.cornerRadius(from: geometryProxy.size))
+				}
+			)
+		} else if roundedCornerStyle == .continuous {
+			content.mask(
+				GeometryReader { geometryProxy in
+					RoundedRectangle(cornerRadius: self.cornerRadius(from: geometryProxy.size), style: .continuous)
+				}
+			)
 		}
 	}
 	
