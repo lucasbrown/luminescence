@@ -1,6 +1,5 @@
 /**
 * Luminescence
-* Copyright © 2020 Lucas Brown
 */
 
 public extension String {
