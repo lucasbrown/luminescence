@@ -4,17 +4,21 @@
 
 import SwiftUI
 
+// TODO: .previewedColorSchemes(.all) (Xcode 12)
+
 public extension View {
 	func previewedColorSchemes(_ colorSchemes: ColorScheme.AllCases = [.light, .dark]) -> some View {
 		Group {
 			if colorSchemes.contains(.light) {
 				self
 					.preferredColorScheme(.light)
+					.previewDisplayName("Light Color Scheme")
 			}
 			
 			if colorSchemes.contains(.dark) {
 				self
 					.preferredColorScheme(.dark)
+					.previewDisplayName("Dark Color Scheme")
 			}
 		}
 	}
