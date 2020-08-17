@@ -12,6 +12,5 @@ public extension Text {
 	static var placeholderLarge: Text {
 		Text(String.placeholder)
 			.font(.largeTitle)
-			.fontWeight(.medium)
 	}
 }
