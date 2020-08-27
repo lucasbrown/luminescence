@@ -2,6 +2,8 @@
 * Luminescence
 */
 
+#if os(iOS)
+
 import SwiftUI
 
 public extension Color {
@@ -54,3 +56,5 @@ public extension Color {
 	// MARK: Link Color
 	static let link = Color(.link)
 }
+
+#endif

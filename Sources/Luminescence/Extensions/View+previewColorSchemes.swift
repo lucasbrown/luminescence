@@ -2,6 +2,8 @@
 * Luminescence
 */
 
+#if os(iOS)
+
 import SwiftUI
 
 public extension View {
@@ -25,3 +27,5 @@ public extension View {
 			.previewColorSchemes(ColorScheme.allCases)
 	}
 }
+
+#endif
