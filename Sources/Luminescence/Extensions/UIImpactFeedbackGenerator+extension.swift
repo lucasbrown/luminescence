@@ -1,5 +1,5 @@
 /**
-* 
+* Luminescence
 */
 
 #if os(iOS)
