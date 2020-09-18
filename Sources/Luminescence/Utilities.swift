@@ -3,5 +3,5 @@
 */
 
 public func print() {
-	print(String.placeholder)
+	print(String.helloWorld)
 }
