@@ -9,10 +9,6 @@ import SwiftUI
 public extension Color {
 	// MARK: - Standard Colors
 	
-	// MARK: Adaptable Colors
-	static let indigo = Color(.systemIndigo)
-	static let teal = Color(.systemTeal)
-	
 	// MARK: Adaptable Gray Colors
 	static let gray2 = Color(.systemGray2)
 	static let gray3 = Color(.systemGray3)
