@@ -7,7 +7,7 @@ let package = Package(
 	name: "Luminescence",
 	
 	platforms: [
-		.iOS(.v13),
+		.iOS(.v15),
 		.macOS(.v10_15),
 		.tvOS(.v13)
 	],
